@@ -6,6 +6,7 @@ int main() {
     std::cin >> n >> k;
 
     std::vector<long long> snow(n + 1, 0);
+    std::vector<long long> answers;
 
     for (int q = 0; q < k; q++) {
         int type;
@@ -23,8 +24,12 @@ int main() {
             for (int i = u; i <= r; i++) {
                 sum += snow[i];
             }
-            std::cout << sum << std::endl;
+            answers.push_back(sum);
         }
+    }
+
+    for (long long ans : answers) {
+        std::cout << ans << std::endl;
     }
 
     return 0;
