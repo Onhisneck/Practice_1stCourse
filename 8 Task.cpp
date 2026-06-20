@@ -63,6 +63,6 @@ void loop() {
       }
     }
     
-    pixels.show(); 
+    pixels.show(); //;)
   }
 }
